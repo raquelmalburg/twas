@@ -1,0 +1,41 @@
+body {
+    background-image: 
+      url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/96024789_114494323584419_4915603676728393728_o.jpg?_nc_cat=102&_nc_sid=19026a&_nc_ohc=eOsKVzXY95sAX-V4O3y&_nc_ht=scontent-syd2-1.xx&oh=c4ece09a1bdabdde5562471feb3281f5&oe=5EDF3CBF");
+    background-size: auto 100vh;
+    font-family: Verdana;
+    height: 100vh;
+  }
+  
+  .menu{
+    background-color: beige;
+  }
+  
+  .menu ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .menu li {
+    list-style: none;
+  }
+  
+  a {
+    color: green;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    }
+  
+    .site-title {
+      color: Green;
+      font-style: bold;
+      text-align: center;
+    }
+  
+  .site-subtitle {
+    color: Orange;
+    text-align: center;
+  }
+  
