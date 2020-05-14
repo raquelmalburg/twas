@@ -1,13 +1,52 @@
+/* reset do css */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    background-image: 
-      url("https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/96024789_114494323584419_4915603676728393728_o.jpg?_nc_cat=102&_nc_sid=19026a&_nc_ohc=eOsKVzXY95sAX-V4O3y&_nc_ht=scontent-syd2-1.xx&oh=c4ece09a1bdabdde5562471feb3281f5&oe=5EDF3CBF");
-    background-size: auto 100vh;
+    background-attachment: fixed;
+    background-image: url("../Images/backgroundop.jpg");
+    background-size: cover;
     font-family: Verdana;
     height: 100vh;
+    font-size: 12px;
   }
   
+  /* se a tela tiver pelo menos 400px vai carregar estes estilos */
+  @media (min-width: 400px) {
+    body {
+      font-size: 14px;
+    }
+  }
+
+  /* breakpoint */
+  @media (min-width: 600px) {
+    body {
+      font-size: 16px;
+    }
+  }
+
+    /* breakpoint */
+    @media (min-width: 800px) {
+      body {
+        font-size: 18px;
+      }
+    }
+
+header {
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
   .menu{
     background-color: beige;
+    position: fixed;
+    width: 100vw;
+    top: 20px;
   }
   
   .menu ul {
@@ -17,6 +56,11 @@ body {
   
   .menu li {
     list-style: none;
+  }
+  
+  .menu a {
+  display: block;
+  padding: 10px 20px;
   }
   
   a {
@@ -30,12 +74,19 @@ body {
   
     .site-title {
       color: Green;
-      font-style: bold;
       text-align: center;
     }
   
+    .site-title {
+      font-size: 2em;
+    }
+
   .site-subtitle {
     color: Orange;
     text-align: center;
   }
   
+  .img-portfolio {
+  height: 20px;
+  width: 60px  
+  }
