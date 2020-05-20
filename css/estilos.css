@@ -9,9 +9,9 @@ body {
     background-attachment: fixed;
     background-image: url("../Images/backgroundop.jpg");
     background-size: cover;
-    font-family: Verdana;
+    font-family: 'Crimson Pro', serif;
     height: 100vh;
-    font-size: 12px;
+    font-size: 14px;
   }
   
   /* se a tela tiver pelo menos 400px vai carregar estes estilos */
@@ -24,7 +24,7 @@ body {
   /* breakpoint */
   @media (min-width: 600px) {
     body {
-      font-size: 16px;
+      font-size: 14px;
     }
   }
 
@@ -78,15 +78,66 @@ align-items: center;
     }
   
     .site-title {
-      font-size: 2em;
+      font-family: 'Crimson Text', serif;
+      font-size: 4em;
+      line-height: 2em;
     }
 
   .site-subtitle {
     color: Orange;
+    font-family: 'Crimson Pro', serif;
+    font-size: 3em;
+    text-align: center;
+      }
+
+  .portfolio {
+    padding: 2em;
+    height: 100vh;
+      }
+  
+  .portfolio h2 {
+    color: green;
+    font-family: 'Crimson Pro', serif;
+    font-size: 2em;
+    /*! padding: 2em; */
+    margin-bottom: 1em;
+  }
+
+  .portfolio .grid {
+    display: grid;
+    gap: 1em;
+  }
+
+@media (min-width: 400px) {
+  .portfolio .grid {
+    grid-template-columns: 240px 240px;
+  }
+}
+
+@media (min-width: 600px) {
+  .portfolio .grid {
+    align-content: center;
+    grid-template-columns: 240px 240px 240px;
+    height: calc(100vh - 2em - 40px - 1em);
+    justify-content: center;
+  }
+}
+
+@media (min-width: 800px) {
+  .portfolio .grid {
+    align-content: center;
+    grid-template-columns: 240px 240px 240px 240px;
+    height: calc(100vh - 2em - 40px - 1em);
+    justify-content: center;
+  }
+}
+
+  .portfolio figure {
     text-align: center;
   }
-  
+
   .img-portfolio {
-  height: 20px;
-  width: 60px  
+  height: 80px;
+  object-fit: cover; 
+  width: 100px;  
   }
