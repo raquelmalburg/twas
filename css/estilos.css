@@ -7,7 +7,7 @@
 
 body {
     background-attachment: fixed;
-    background-image: url("../Images/backgroundop.jpg");
+    background-image: url("../Images/backgroundop2.jpg");
     background-size: cover;
     font-family: 'Crimson Pro', serif;
     font-size: 14px;
@@ -99,23 +99,60 @@ justify-content: center;
     text-align: center;
   }
 
+   .portfolio {
+    color: green;
+    min-height: 80vh;
+    padding: 2em; 
+    text-align: center;
+  }
+
   .contato,
-  .portfolio {
+  .portfolio,
+  .sobre {
      color: green;
      min-height: 80vh;
      padding: 2em;
-  }
+}
   
+@media (min-width: 1200px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+
   .contato h2,    
-  .portfolio h2 {
-    color: green;
-    font-family: 'Crimson Pro', serif;
+  .portfolio h2,
+  .sobre h2 {
+    color: orange;
+    font-family: 'Crimson Text', serif;
     font-size: 2em;
     margin-bottom: 1em;
     text-align: center;
   }
 
-  .portfolio .grid {
+  .sobre p {
+    color: green;
+    margin-bottom: 2em;
+    text-align: justify;
+    text-indent: 1.5em;
+  }
+
+.sobre .lideranca {
+  margin-bottom: 2em;
+  text-align: center; 
+}
+
+.sobre .lideranca img {
+  border-radius: 10%;
+  transition: transform 500ms;
+}
+
+.sobre .lideranca img:hover {
+  transform: scale(1.2);
+  }
+
+    .portfolio .grid {
     display: grid;
     gap: 1em;
   }
@@ -166,13 +203,14 @@ justify-content: center;
   }
 
   .contato a {
-  color: green;
+  color: orange;
   font-size: 4em;
   margin: 5vh;
   transition: text-shadow 1s;
+  text-decoration: none;
   }
 
   .contato a:active, 
   .contato a:hover {
-  text-shadow: 0px 0px 10px orange;
+  text-shadow: 10px 10px 20px yellowgreen;
   }
