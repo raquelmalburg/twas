@@ -1,39 +1,39 @@
 /* reset do css */
 *{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
- }
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
 
 body {
-    background-attachment: fixed;
-    background-image: url("../Images/backgroundop2.jpg");
-    background-size: cover;
-    font-family: 'Crimson Pro', serif;
-    font-size: 14px;
-    height: 100vh;
-  }
+background-attachment: fixed;
+background-image: url("../Images/backgroundop2.jpg");
+background-size: cover;
+font-family: 'Crimson Pro', serif;
+font-size: 14px;
+height: 100vh;
+}
   
   /* se a tela tiver pelo menos 400px vai carregar estes estilos */
   @media (min-width: 400px) {
-    body {
-      font-size: 14px;
-    }
+  body {
+  font-size: 14px;
+   }
   }
 
   /* breakpoint */
   @media (min-width: 600px) {
-    body {
-      font-size: 16px;
-    }
+  body {
+  font-size: 16px;
+   }
   }
 
-    /* breakpoint */
-    @media (min-width: 800px) {
-      body {
-        font-size: 18px;
-      }
-    }
+  /* breakpoint */
+  @media (min-width: 800px) {
+  body {
+  font-size: 18px;
+   }
+  }
 
 header {
 align-items: center;
@@ -42,175 +42,175 @@ height: 100vh;
 justify-content: center;
 }
 
-  .menu{
-    background-color: beige;
-    font-size: 22px;
-    position: fixed;
-    top: 20px;
-    width: 100vw;
-    z-index: 1;
-    }
-  
-  .menu ul {
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .menu li {
-    list-style: none;
-  }
-  
-  .menu a {
-  display: block;
-  padding: 10px 20px;
-  transition: background-color 1s, color 1s;
-  }
-
-  .menu a:active,
-  .menu a:hover {
-   background-color: green;
-   color: orange;
-  }
-  
-  a {
-    color: green;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-    .site-title {
-      color: Green;
-      text-align: center;
-  }
-  
-    .site-title {
-      font-family: 'Crimson Text', serif;
-      font-size: 4em;
-      line-height: 2em;
-  }
-
-  .site-subtitle {
-    color: Orange;
-    font-family: 'Crimson Pro', serif;
-    font-size: 3em;
-    text-align: center;
-  }
-
-   .portfolio {
-    color: green;
-    min-height: 80vh;
-    padding: 2em; 
-    text-align: center;
-  }
-
-  .contato,
-  .portfolio,
-  .sobre {
-     color: green;
-     min-height: 80vh;
-     padding: 2em;
+.menu{
+background-color: beige;
+font-size: 22px;
+position: fixed;
+top: 20px;
+width: 100vw;
+z-index: 1;
 }
   
-@media (min-width: 1200px) {
-  .container {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1200px;
+.menu ul {
+display: flex;
+justify-content: space-around;
+}
+  
+.menu li {
+list-style: none;
+}
+  
+.menu a {
+display: block;
+padding: 10px 20px;
+transition: background-color 1s, color 1s;
 }
 
-  .contato h2,    
-  .portfolio h2,
-  .sobre h2 {
-    color: orange;
-    font-family: 'Crimson Text', serif;
-    font-size: 2em;
-    margin-bottom: 1em;
-    text-align: center;
-  }
-
-  .sobre p {
-    color: green;
-    margin-bottom: 2em;
-    text-align: justify;
-    text-indent: 1.5em;
-  }
-
-.sobre .lideranca {
-  margin-bottom: 2em;
-  text-align: center; 
+.menu a:active,
+.menu a:hover {
+background-color: green;
+color: orange;
+}
+  
+a {
+color: green;
+text-decoration: none;
+}
+  
+a:hover {
+text-decoration: underline;
+}
+  
+.site-title {
+color: Green;
+text-align: center;
+}
+  
+.site-title {
+font-family: 'Crimson Text', serif;
+font-size: 4em;
+line-height: 2em;
 }
 
-.sobre .lideranca img {
-  border-radius: 10%;
-  transition: transform 500ms;
+.site-subtitle {
+color: Orange;
+font-family: 'Crimson Pro', serif;
+font-size: 3em;
+text-align: center;
 }
 
-.sobre .lideranca img:hover {
-  transform: scale(1.2);
-  }
+.portfolio {
+color: green;
+min-height: 80vh;
+padding: 2em; 
+text-align: center;
+}
 
-    .portfolio .grid {
-    display: grid;
-    gap: 1em;
-  }
+.portfolio figure {
+font-size: 30px;
+text-align: center;
+}
+
+.img-portfolio {
+height: 200px;
+object-fit: cover;
+transition: transform 500ms; 
+width: 150px;  
+}
+
+.img-portfolio:hover {
+transform: scale(1.2);
+}
+
+.portfolio .grid {
+display: grid;
+gap: 1em;
+}
 
 @media (min-width: 400px) {
-  .portfolio .grid {
-    grid-template-columns: 240px 240px;
-  }
+.portfolio .grid {
+grid-template-columns: 240px 240px;
+ }
 }
 
 @media (min-width: 600px) {
-  .portfolio .grid {
-    align-content: center;
-    grid-template-columns: 240px 240px 240px;
-    height: calc(100vh - 2em - 40px - 1em);
-    justify-content: center;
-  }
+.portfolio .grid {
+align-content: center;
+grid-template-columns: 240px 240px 240px;
+height: calc(100vh - 2em - 40px - 1em);
+justify-content: center;
+ }
 }
 
 @media (min-width: 800px) {
-  .portfolio .grid {
-    align-content: center;
-    grid-template-columns: 240px 240px 240px 240px;
-    height: calc(100vh - 2em - 40px - 1em);
-    justify-content: center;
-  }
+.portfolio .grid {
+align-content: center;
+grid-template-columns: 240px 240px 240px 240px;
+height: calc(100vh - 2em - 40px - 1em);
+justify-content: center;
+ }
 }
 
-  .portfolio figure {
-    font-size: 30px;
-    text-align: center;
-  }
+.sobre p {
+color: green;
+margin-bottom: 2em;
+text-align: justify;
+text-indent: 1.5em;
+}
 
-  .img-portfolio {
-  height: 200px;
-  object-fit: cover;
-  transition: transform 500ms; 
-  width: 150px;  
-  }
+.sobre .lideranca {
+margin-bottom: 2em;
+text-align: center; 
+}
 
-  .img-portfolio:hover {
-  transform: scale(1.2);
-  }
+.sobre .lideranca img {
+border-radius: 10%;
+transition: transform 500ms;
+}
 
-  .contato .icons {
-    padding: 20vh;
-    text-align: center;
-  }
+.sobre .lideranca img:hover {
+transform: scale(1.2);
+}
 
-  .contato a {
-  color: orange;
-  font-size: 4em;
-  margin: 5vh;
-  transition: text-shadow 1s;
-  text-decoration: none;
-  }
+.contato .icons {
+padding: 20vh;
+text-align: center;
+}
 
-  .contato a:active, 
-  .contato a:hover {
-  text-shadow: 10px 10px 20px yellowgreen;
-  }
+.contato a {
+color: orange;
+font-size: 4em;
+margin: 5vh;
+transition: text-shadow 1s;
+text-decoration: none;
+}
+
+.contato a:active, 
+.contato a:hover {
+text-shadow: 10px 10px 20px yellowgreen;
+}
+
+.contato,
+.portfolio,
+.sobre {
+color: green;
+min-height: 80vh;
+padding: 2em;
+}
+  
+@media (min-width: 1200px) {
+.container {
+margin-left: auto;
+margin-right: auto;
+max-width: 1200px;
+}
+
+.contato h2,    
+.portfolio h2,
+.sobre h2 {
+color: orange;
+font-family: 'Crimson Text', serif;
+font-size: 2em;
+margin-bottom: 1em;
+text-align: center;
+}
